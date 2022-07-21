@@ -3,7 +3,6 @@ from sys import argv
 import math
 """gets the first two factors of any number"""
 
-
 def is_prime(num):
     """checks if a number is prime"""
     i = 3
@@ -14,7 +13,6 @@ def is_prime(num):
             return False
         i += 2
     return True
-
 
 def factory(num):
     """This factor function gets the factors of a number & prints them out"""
@@ -33,13 +31,11 @@ def factory(num):
                     print("{}={}*{}".format(num, int(num/i), i))
                     return
 
-
 def factors(filename):
     """read_file"""
     with open(filename, encoding="utf-8") as my_file:
         for i in my_file.readlines():
             n = int(i)
             result = factory(n)
-
 
 if __name__ == "__main__":
